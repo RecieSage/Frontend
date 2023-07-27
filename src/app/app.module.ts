@@ -1,3 +1,5 @@
+import { TuiRootModule, TuiDialogModule, TuiAlertModule } from "@taiga-ui/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,7 +10,7 @@ import axios, { Axios } from 'axios';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, TuiRootModule, TuiDialogModule, TuiAlertModule],
   providers: [],
   bootstrap: [AppComponent],
 })
